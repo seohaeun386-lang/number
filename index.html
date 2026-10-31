@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="ko">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>넘버퀘스트 · 매일 조금 더 똑똑하게</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><a class="brand" href="./"><span class="logo">n<span>⁺</span></span> 넘버퀘스트</a><span class="header-note">작은 도전, 커지는 실력</span><button id="sound" class="quiet" aria-pressed="false">효과음 꺼짐</button></header>
+<main>
+<section class="intro"><span class="eyebrow">PLAY · LEARN · LEVEL UP</span><h1>생각은 빠르게,<br>성장은 <span>차근차근.</span></h1><p>한 문제씩 풀다 보면 어느새 다음 레벨.<br>오늘의 수학 모험을 시작해 볼까요?</p></section>
+<div class="layout"><section class="game" aria-label="계산 게임">
+<div class="game-top"><span class="level-pill" id="level">LEVEL 01</span><span class="mode" id="mode">덧셈 탐험</span></div>
+<div class="progress-caption"><span>다음 레벨까지</span><span id="progress-label">0 / 5</span></div><div class="track"><div id="progress"></div></div>
+<div class="question-area"><span class="question-label">정답을 입력해 주세요</span><div class="equation"><span id="question"></span><span class="equals">=</span><span class="answer-mark">?</span></div></div>
+<form id="answer-form"><label class="sr-only" for="answer">정답</label><input id="answer" type="number" inputmode="numeric" placeholder="정답은?" required autocomplete="off"><button class="primary" type="submit">정답 확인 <span>↗</span></button></form>
+<p id="feedback" role="status" aria-live="polite">천천히 생각해도 괜찮아요. 준비되면 Enter ↵</p>
+<div class="game-bottom"><span>✦ 틀려도 괜찮아요. 다시 도전!</span><button id="restart" class="quiet">처음부터 ↻</button></div>
+</section>
+<aside><div class="stats"><span class="eyebrow">MY ADVENTURE</span><h2>오늘의 기록</h2><div class="stat-row"><span>획득 점수</span><strong><span id="score">0</span><small>점</small></strong></div><div class="stat-row"><span>연속 정답</span><strong><span id="streak">0</span><small>개</small></strong></div><div class="best">나의 최고 점수 <b id="best">0점</b></div></div><div class="journey"><span class="mini-icon">✧</span><h3>갈수록 더 재미있게</h3><p>정답 5개마다 레벨 업!<br>새로운 연산이 기다리고 있어요.</p><ol><li class="active">Lv. 1 <span>덧셈으로 가볍게</span></li><li>Lv. 3 <span>뺄셈도 함께</span></li><li>Lv. 5 <span>곱셈에 도전</span></li><li>Lv. 8 <span>나눗셈까지 완성</span></li></ol></div></aside></div>
+<footer><span>하루 5분, 숫자와 친해지는 시간.</span><span>Made for curious minds ✳</span></footer>
+</main><script type="module" src="app.js"></script>
+</body></html>
